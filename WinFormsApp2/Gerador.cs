@@ -4,13 +4,13 @@ namespace WinFormsApp2
 {
     public partial class Gerador : Form
     {
-        private MultipleChoice _multipleChoice;
+        private MultipleChoiceControl _multipleChoice;
         private TrueFalse _trueFalse;
         private Gaps _gaps;
         public Gerador()
         {
             InitializeComponent();
-            _multipleChoice =  new MultipleChoice();
+            _multipleChoice =  new MultipleChoiceControl();
             _trueFalse = new TrueFalse();
             _gaps = new Gaps();
         }
@@ -18,7 +18,7 @@ namespace WinFormsApp2
         private void btnMultipleChoice_Click(object sender, EventArgs e)
         {
             pnlQuestion.Controls.Clear();
-            pnlQuestion.Controls.Add(_multipleChoice);
+            pnlQuestion.Controls.Add(new MultipleChoiceControl());
         }
 
         private void btnTrueFalse_Click(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace WinFormsApp2
             switch (type.Name)
             {
                 case "MultipleChoice":
-                    _multipleChoice = new MultipleChoice();
+                    _multipleChoice = new MultipleChoiceControl();
                     pnlQuestion.Controls.Add(_multipleChoice);
                     break;
                 case "TrueFalse":

@@ -41,6 +41,7 @@
             // 
             this.pnlQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlQuestion.AutoScroll = true;
             this.pnlQuestion.AutoSize = true;
             this.pnlQuestion.Location = new System.Drawing.Point(0, 57);
             this.pnlQuestion.Name = "pnlQuestion";
@@ -49,7 +50,7 @@
             // 
             // btnMultipleChoice
             // 
-            this.btnMultipleChoice.Location = new System.Drawing.Point(71, 15);
+            this.btnMultipleChoice.Location = new System.Drawing.Point(136, 15);
             this.btnMultipleChoice.Name = "btnMultipleChoice";
             this.btnMultipleChoice.Size = new System.Drawing.Size(139, 23);
             this.btnMultipleChoice.TabIndex = 1;
@@ -59,7 +60,7 @@
             // 
             // btnTrueFalse
             // 
-            this.btnTrueFalse.Location = new System.Drawing.Point(216, 15);
+            this.btnTrueFalse.Location = new System.Drawing.Point(281, 15);
             this.btnTrueFalse.Name = "btnTrueFalse";
             this.btnTrueFalse.Size = new System.Drawing.Size(139, 23);
             this.btnTrueFalse.TabIndex = 2;
@@ -69,7 +70,7 @@
             // 
             // btnGaps
             // 
-            this.btnGaps.Location = new System.Drawing.Point(361, 15);
+            this.btnGaps.Location = new System.Drawing.Point(426, 15);
             this.btnGaps.Name = "btnGaps";
             this.btnGaps.Size = new System.Drawing.Size(139, 23);
             this.btnGaps.TabIndex = 3;
@@ -92,7 +93,7 @@
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.SystemColors.Info;
-            this.btnClear.Location = new System.Drawing.Point(529, 15);
+            this.btnClear.Location = new System.Drawing.Point(594, 15);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 4;
@@ -104,6 +105,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(676, 721);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlQuestion);
