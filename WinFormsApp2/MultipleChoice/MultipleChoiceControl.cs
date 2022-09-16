@@ -5,6 +5,7 @@
         public MultipleChoiceControl()
         {
             InitializeComponent();
+            this.BringToFront();
         }
     }
 }

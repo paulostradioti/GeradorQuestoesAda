@@ -91,7 +91,7 @@
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.SystemColors.Info;
-            this.btnClear.Location = new System.Drawing.Point(594, 15);
+            this.btnClear.Location = new System.Drawing.Point(589, 15);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 4;
@@ -105,6 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(676, 503);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlQuestion);
