@@ -39,13 +39,11 @@
             // 
             // pnlQuestion
             // 
-            this.pnlQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlQuestion.AutoScroll = true;
             this.pnlQuestion.AutoSize = true;
-            this.pnlQuestion.Location = new System.Drawing.Point(0, 57);
+            this.pnlQuestion.Location = new System.Drawing.Point(0, 52);
             this.pnlQuestion.Name = "pnlQuestion";
-            this.pnlQuestion.Size = new System.Drawing.Size(676, 664);
+            this.pnlQuestion.Size = new System.Drawing.Size(676, 450);
             this.pnlQuestion.TabIndex = 0;
             // 
             // btnMultipleChoice
@@ -107,7 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(676, 721);
+            this.ClientSize = new System.Drawing.Size(676, 503);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlQuestion);
             this.Name = "Gerador";
