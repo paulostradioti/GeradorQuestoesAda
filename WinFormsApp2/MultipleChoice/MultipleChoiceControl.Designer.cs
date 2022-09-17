@@ -33,28 +33,28 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnGerar = new System.Windows.Forms.Button();
             this.tabAlternativa1 = new System.Windows.Forms.TabPage();
-            this.cbCorrect = new System.Windows.Forms.CheckBox();
+            this.chkCorrect1 = new System.Windows.Forms.CheckBox();
             this.txtFeedback1 = new System.Windows.Forms.TextBox();
             this.txtAlternativa1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTexto = new System.Windows.Forms.Label();
             this.tabAnswers = new System.Windows.Forms.TabControl();
             this.tabAlternativa2 = new System.Windows.Forms.TabPage();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.chkCorrect2 = new System.Windows.Forms.CheckBox();
+            this.txtFeedback2 = new System.Windows.Forms.TextBox();
+            this.txtAlternativa2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabAlternativa3 = new System.Windows.Forms.TabPage();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.chkCorrect3 = new System.Windows.Forms.CheckBox();
+            this.txtFeedback3 = new System.Windows.Forms.TextBox();
+            this.txtAlternativa3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tabAlternativa4 = new System.Windows.Forms.TabPage();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.chkCorrect4 = new System.Windows.Forms.CheckBox();
+            this.txtFeedback4 = new System.Windows.Forms.TextBox();
+            this.txtAlternativa4 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -103,10 +103,11 @@
             this.btnGerar.TabIndex = 5;
             this.btnGerar.Text = "Gerar";
             this.btnGerar.UseVisualStyleBackColor = true;
+            this.btnGerar.Click += new System.EventHandler(this.btnGerar_Click);
             // 
             // tabAlternativa1
             // 
-            this.tabAlternativa1.Controls.Add(this.cbCorrect);
+            this.tabAlternativa1.Controls.Add(this.chkCorrect1);
             this.tabAlternativa1.Controls.Add(this.txtFeedback1);
             this.tabAlternativa1.Controls.Add(this.txtAlternativa1);
             this.tabAlternativa1.Controls.Add(this.label2);
@@ -120,15 +121,15 @@
             this.tabAlternativa1.Text = "Alternativa 1";
             this.tabAlternativa1.UseVisualStyleBackColor = true;
             // 
-            // cbCorrect
+            // chkCorrect1
             // 
-            this.cbCorrect.AutoSize = true;
-            this.cbCorrect.Location = new System.Drawing.Point(11, 165);
-            this.cbCorrect.Name = "cbCorrect";
-            this.cbCorrect.Size = new System.Drawing.Size(84, 25);
-            this.cbCorrect.TabIndex = 6;
-            this.cbCorrect.Text = "Correta";
-            this.cbCorrect.UseVisualStyleBackColor = true;
+            this.chkCorrect1.AutoSize = true;
+            this.chkCorrect1.Location = new System.Drawing.Point(11, 165);
+            this.chkCorrect1.Name = "chkCorrect1";
+            this.chkCorrect1.Size = new System.Drawing.Size(84, 25);
+            this.chkCorrect1.TabIndex = 6;
+            this.chkCorrect1.Text = "Correta";
+            this.chkCorrect1.UseVisualStyleBackColor = true;
             // 
             // txtFeedback1
             // 
@@ -180,9 +181,9 @@
             // 
             // tabAlternativa2
             // 
-            this.tabAlternativa2.Controls.Add(this.checkBox1);
-            this.tabAlternativa2.Controls.Add(this.textBox1);
-            this.tabAlternativa2.Controls.Add(this.textBox2);
+            this.tabAlternativa2.Controls.Add(this.chkCorrect2);
+            this.tabAlternativa2.Controls.Add(this.txtFeedback2);
+            this.tabAlternativa2.Controls.Add(this.txtAlternativa2);
             this.tabAlternativa2.Controls.Add(this.label3);
             this.tabAlternativa2.Controls.Add(this.label4);
             this.tabAlternativa2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -194,33 +195,33 @@
             this.tabAlternativa2.Text = "Alternativa 2";
             this.tabAlternativa2.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chkCorrect2
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(14, 168);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(84, 25);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Correta";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkCorrect2.AutoSize = true;
+            this.chkCorrect2.Location = new System.Drawing.Point(14, 168);
+            this.chkCorrect2.Name = "chkCorrect2";
+            this.chkCorrect2.Size = new System.Drawing.Size(84, 25);
+            this.chkCorrect2.TabIndex = 6;
+            this.chkCorrect2.Text = "Correta";
+            this.chkCorrect2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtFeedback2
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(11, 104);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(608, 50);
-            this.textBox1.TabIndex = 3;
+            this.txtFeedback2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFeedback2.Location = new System.Drawing.Point(11, 104);
+            this.txtFeedback2.Multiline = true;
+            this.txtFeedback2.Name = "txtFeedback2";
+            this.txtFeedback2.Size = new System.Drawing.Size(608, 50);
+            this.txtFeedback2.TabIndex = 3;
             // 
-            // textBox2
+            // txtAlternativa2
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(11, 27);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(608, 50);
-            this.textBox2.TabIndex = 1;
+            this.txtAlternativa2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAlternativa2.Location = new System.Drawing.Point(11, 27);
+            this.txtAlternativa2.Multiline = true;
+            this.txtAlternativa2.Name = "txtAlternativa2";
+            this.txtAlternativa2.Size = new System.Drawing.Size(608, 50);
+            this.txtAlternativa2.TabIndex = 1;
             // 
             // label3
             // 
@@ -242,9 +243,9 @@
             // 
             // tabAlternativa3
             // 
-            this.tabAlternativa3.Controls.Add(this.checkBox2);
-            this.tabAlternativa3.Controls.Add(this.textBox3);
-            this.tabAlternativa3.Controls.Add(this.textBox4);
+            this.tabAlternativa3.Controls.Add(this.chkCorrect3);
+            this.tabAlternativa3.Controls.Add(this.txtFeedback3);
+            this.tabAlternativa3.Controls.Add(this.txtAlternativa3);
             this.tabAlternativa3.Controls.Add(this.label5);
             this.tabAlternativa3.Controls.Add(this.label6);
             this.tabAlternativa3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -256,33 +257,33 @@
             this.tabAlternativa3.Text = "Alternativa 3";
             this.tabAlternativa3.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkCorrect3
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(14, 168);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(84, 25);
-            this.checkBox2.TabIndex = 6;
-            this.checkBox2.Text = "Correta";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkCorrect3.AutoSize = true;
+            this.chkCorrect3.Location = new System.Drawing.Point(14, 168);
+            this.chkCorrect3.Name = "chkCorrect3";
+            this.chkCorrect3.Size = new System.Drawing.Size(84, 25);
+            this.chkCorrect3.TabIndex = 6;
+            this.chkCorrect3.Text = "Correta";
+            this.chkCorrect3.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtFeedback3
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(11, 104);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(608, 50);
-            this.textBox3.TabIndex = 3;
+            this.txtFeedback3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFeedback3.Location = new System.Drawing.Point(11, 104);
+            this.txtFeedback3.Multiline = true;
+            this.txtFeedback3.Name = "txtFeedback3";
+            this.txtFeedback3.Size = new System.Drawing.Size(608, 50);
+            this.txtFeedback3.TabIndex = 3;
             // 
-            // textBox4
+            // txtAlternativa3
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(11, 27);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(608, 50);
-            this.textBox4.TabIndex = 1;
+            this.txtAlternativa3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAlternativa3.Location = new System.Drawing.Point(11, 27);
+            this.txtAlternativa3.Multiline = true;
+            this.txtAlternativa3.Name = "txtAlternativa3";
+            this.txtAlternativa3.Size = new System.Drawing.Size(608, 50);
+            this.txtAlternativa3.TabIndex = 1;
             // 
             // label5
             // 
@@ -304,9 +305,9 @@
             // 
             // tabAlternativa4
             // 
-            this.tabAlternativa4.Controls.Add(this.checkBox3);
-            this.tabAlternativa4.Controls.Add(this.textBox5);
-            this.tabAlternativa4.Controls.Add(this.textBox6);
+            this.tabAlternativa4.Controls.Add(this.chkCorrect4);
+            this.tabAlternativa4.Controls.Add(this.txtFeedback4);
+            this.tabAlternativa4.Controls.Add(this.txtAlternativa4);
             this.tabAlternativa4.Controls.Add(this.label7);
             this.tabAlternativa4.Controls.Add(this.label8);
             this.tabAlternativa4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -318,33 +319,33 @@
             this.tabAlternativa4.Text = "Alternativa 4";
             this.tabAlternativa4.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkCorrect4
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(14, 168);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(84, 25);
-            this.checkBox3.TabIndex = 6;
-            this.checkBox3.Text = "Correta";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chkCorrect4.AutoSize = true;
+            this.chkCorrect4.Location = new System.Drawing.Point(14, 168);
+            this.chkCorrect4.Name = "chkCorrect4";
+            this.chkCorrect4.Size = new System.Drawing.Size(84, 25);
+            this.chkCorrect4.TabIndex = 6;
+            this.chkCorrect4.Text = "Correta";
+            this.chkCorrect4.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtFeedback4
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(11, 104);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(608, 50);
-            this.textBox5.TabIndex = 3;
+            this.txtFeedback4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFeedback4.Location = new System.Drawing.Point(11, 104);
+            this.txtFeedback4.Multiline = true;
+            this.txtFeedback4.Name = "txtFeedback4";
+            this.txtFeedback4.Size = new System.Drawing.Size(608, 50);
+            this.txtFeedback4.TabIndex = 3;
             // 
-            // textBox6
+            // txtAlternativa4
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(11, 27);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(608, 50);
-            this.textBox6.TabIndex = 1;
+            this.txtAlternativa4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAlternativa4.Location = new System.Drawing.Point(11, 27);
+            this.txtAlternativa4.Multiline = true;
+            this.txtAlternativa4.Name = "txtAlternativa4";
+            this.txtAlternativa4.Size = new System.Drawing.Size(608, 50);
+            this.txtAlternativa4.TabIndex = 1;
             // 
             // label7
             // 
@@ -403,23 +404,23 @@
         private Label label2;
         private Label lblTexto;
         private TabControl tabAnswers;
-        private CheckBox cbCorrect;
+        private CheckBox chkCorrect1;
         private TabPage tabAlternativa2;
-        private CheckBox checkBox1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private CheckBox chkCorrect2;
+        private TextBox txtFeedback2;
+        private TextBox txtAlternativa2;
         private Label label3;
         private Label label4;
         private TabPage tabAlternativa3;
-        private CheckBox checkBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private CheckBox chkCorrect3;
+        private TextBox txtFeedback3;
+        private TextBox txtAlternativa3;
         private Label label5;
         private Label label6;
         private TabPage tabAlternativa4;
-        private CheckBox checkBox3;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private CheckBox chkCorrect4;
+        private TextBox txtFeedback4;
+        private TextBox txtAlternativa4;
         private Label label7;
         private Label label8;
     }
