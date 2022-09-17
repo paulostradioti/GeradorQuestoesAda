@@ -1,18 +1,18 @@
 ﻿using System.Text.Json;
+using GeradorQuestoes.MultipleChoice;
 
-namespace GeradorQuestoes.MultipleChoice
+namespace GeradorQuestoes.TrueOrFalse
 {
-    public partial class MultipleChoiceControl : UserControl
+    public partial class TrueOrFalseControl : UserControl
     {
-        public MultipleChoiceControl()
+        public TrueOrFalseControl()
         {
             InitializeComponent();
-            this.BringToFront();
         }
 
         private void btnGerar_Click(object sender, EventArgs e)
         {
-            var modelo = new MultipleChoiceModel
+            var modelo = new TrueOrFalseModel()
             {
                 Text = txtEnunciado.Text.Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries),
                 Alternatives = GenerateAlternatives(),
@@ -21,14 +21,14 @@ namespace GeradorQuestoes.MultipleChoice
             var content = JsonSerializer.Serialize(modelo, new JsonSerializerOptions() { WriteIndented = true });
 
             Clipboard.SetText(content);
-            
+
             MessageBox.Show("Copiado para a área de transferência.", "Copiado", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
         }
 
-        private MultipleChoiceAlternativeModel[] GenerateAlternatives()
+        private TrueOrFalseAlternativeModel[] GenerateAlternatives()
         {
-            return new MultipleChoiceAlternativeModel[]
+            return new TrueOrFalseAlternativeModel[]
             {
                 new()
                 {

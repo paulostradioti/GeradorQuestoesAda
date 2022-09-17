@@ -1,8 +1,8 @@
 using GeradorQuestoes.MultipleChoice;
 using GeradorQuestoes.QuestionTypes;
-using System.Windows.Forms;
+using GeradorQuestoes.TrueOrFalse;
 
-namespace WinFormsApp2
+namespace GeradorQuestoesAda
 {
     public partial class Gerador : Form
     {
@@ -14,14 +14,14 @@ namespace WinFormsApp2
             _controls = new Dictionary<Type, Control>()
             {
                 { typeof(MultipleChoiceControl), new MultipleChoiceControl() },
-                { typeof(TrueFalse), new TrueFalse() },
+                { typeof(TrueOrFalseControl), new TrueOrFalseControl() },
                 { typeof(Gaps), new Gaps() }
             };
 
             _createNewObject = new Dictionary<Type, Func<Control>>()
             {
                 { typeof(MultipleChoiceControl), () => new MultipleChoiceControl() },
-                { typeof(TrueFalse), () => new TrueFalse() },
+                { typeof(TrueOrFalseControl), () => new TrueOrFalseControl() },
                 { typeof(Gaps), () => new Gaps() }
             };
         }
@@ -35,7 +35,7 @@ namespace WinFormsApp2
         private void btnTrueFalse_Click(object sender, EventArgs e)
         {
             pnlQuestion.Controls.Clear();
-            pnlQuestion.Controls.Add(_controls[typeof(TrueFalse)]);
+            pnlQuestion.Controls.Add(_controls[typeof(TrueOrFalseControl)]);
         }
 
         private void btnGaps_Click(object sender, EventArgs e)
